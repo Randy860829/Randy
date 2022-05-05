@@ -1,0 +1,91 @@
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header{
+    height: 180px;
+    background-color: #FF8040;
+    border-radius: 30px 30px 0 0 ;
+}
+.sauce{
+    height: 30px;
+    background-color: #EAC100;
+    border-radius: 30px;
+}
+.vegetable{
+    height: 40px;
+    background-color: #009100;
+}
+.tomato{
+    height: 20px;
+    background-color: red;
+    border-radius: 30px;
+}
+.beef{
+    height: 50px;
+    background-color:#642100 ;
+    border-radius: 30px;
+}
+.content{
+    padding: 50px 0;
+}
+.form-login{
+    max-width: 375px;
+    margin: 0 auto;
+}
+.form-login h2{
+    text-align: center;
+    color: 	#642100;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-login .pure-form-stacked{
+    border: 1px solid gray;
+    border-top: 3px solid orange;
+    padding: 5px;
+    box-shadow: 1px 1px 5px;
+}
+.form-login .pure-form-stacked h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #642100;
+}
+.form-login .pure-form-stacked label{
+    color: #642100;
+}
+.form-login .pure-form-stacked input{
+    width: 360px;
+}
+.form-login .pure-form-stacked .form-login-text{
+    margin: 10px 0;
+}
+.form-login .pure-form-stacked .form-login-text:focus{
+    border: 1px solid #F75000;
+}
+.form-login .pure-form-stacked .userInfo{
+    margin-bottom: 40px;
+}
+.btn-style{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-style button{
+    width: 150px;
+}
+.getPassword{
+    color: #F75000;
+}
+.btn-style button{
+  background-color: #8E8E8E;
+}
+.btn-style .orange{
+    background-color: #F75000;
+}
+.footer{
+    height: 80px;
+    background-color: #FF8040;
+    border-radius: 0px 0px 30px 30px ;
+    margin-bottom: 0;
+}

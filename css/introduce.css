@@ -1,0 +1,281 @@
+.wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: Microsoft JhengHei;
+}
+
+.logoAndMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    background-image: url(/img/hamburger.svg);
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.97em 0.5em;
+    color: orange;
+    font-weight: bold;
+    width: 80px;
+    display: block;
+    border-bottom: 3px solid #fff;
+}
+
+.menu a:hover {
+    border-bottom: 3px solid orange;
+}
+
+.momenu {
+    display: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width:569px) {
+    .menu {
+        flex-wrap: wrap;
+        /*隱藏選單開始*/
+        max-height: 0px;
+        overflow: hidden;
+        /*隱藏選單結束*/
+        transition: max-height 2s;
+        margin-top: 1px;
+        /*絕對定位疊在網頁上*/
+        position: absolute;
+        z-index: 100;
+        /*header 52px */
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: #0F222B;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dashed orange;
+    }
+
+    .menu li a {
+        border-bottom: none;
+        color: #fff;
+    }
+
+    .menu li a:hover {
+        border-bottom: none;
+        color: orange;
+    }
+
+    .momenu {
+        display: block;
+        justify-content: flex-end;
+    }
+
+    .menu-show .menu {
+        max-height: 500px
+    }
+}
+
+
+
+.swiper {
+    margin-top: 10px;
+}
+
+.swiper img {
+    width: 1002px;
+    height: 346px;
+    object-fit: cover;
+}
+
+
+.course {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.course>li {
+    width: 31.333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 5px #dcdcdc;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+
+@media (max-width: 767px) {
+    .course {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course>li {
+        width: 50%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .course>li {
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+
+.pic {
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.course h6,
+.course p,
+.course ul {
+    width: 90%;
+}
+
+.course h6 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course p,
+.course li {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.menuTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.menuTwo-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.menuTwo-left h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+@media (max-width:569px) {
+    .menuTwo-left {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .course h6 {
+        font-size: 24px;
+    }
+}
+
+.compare {
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.compare tr,
+.compare td,
+.compare td {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 300px;
+}
+
+.compare th,
+.compare td {
+    padding: 10px;
+}
+
+.compare th {
+    text-align: left;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.footer {
+    background-color: #FF8040;
+    margin-bottom: 0;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer li {
+    padding: 20px;
+    width: 25%;
+}
+
+.footer li h2 {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon i {
+    padding: 20px;
+    font-size: x-large;
+}
+
+@media (max-width:569px) {
+    .footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
