@@ -1,4 +1,4 @@
-.wrap{
+.wrap {
     margin: 0 auto;
     max-width: 1000px;
     font-family: Microsoft JhengHei;
@@ -64,13 +64,6 @@
         right: 0;
         background: #0F222B;
     }
-    .logoAndMenu{
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        background-color: #fff;
-        margin-top: -10px;
-    }
 
     .menu li {
         width: 100%;
@@ -99,119 +92,14 @@
         max-height: 500px
     }
 }
-
-.banner{
-    background-repeat: no-repeat;
-    position: relative;
-    margin-bottom: 30px;
-}
-.banner img{
-    height: 100%;
+.bg-cover{
     background-size: cover;
-    background-position: center;
-}
-
-.banner .text{
-    width: 50%;
-    background: rgb(0, 0, 0, 0.5);
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 25%;
-    transform: translateY(-50%);
-    color: #fff;
-    padding: 20px 45px;
-}
-.banner .text h2  {
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-}
-.banner .text p{
-    font-size: 12px;
-    padding-top: 24px;
-    line-height: 20px;
-}
-@media (max-width:569px) {
-    .text{
-        display: none;
-    }
-}
-.title{    
-    text-align: center;
-    font-size: 24px;
-    color: 	#A23400;
-    font-weight: bold;
-}
-.title span{
-    display: block;
-    position: relative;
-    padding-top: 20px;
-}
-.title span:before,
-.title span:after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  background: #aaa;
-  width: 15%;
-  height: 1px;
-}
-.title span:before {
-  left: 22%; 
-}
-.title span:after {
-  right: 22%;
-}
-.content{
-    margin-top: 30px;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.content li{
-    float: left;
-    text-align: center;
-    margin: 1%;
-    width: 29%;
-    padding:0 1%;
-}
-.content img{
-    border-radius:50%;
-}
-.content h4{
-    font-size:18px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.content p {
-    line-height: 30px;
-    
-}
-@media (max-width:569px) {
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .content p{
-        display: none;
-    }
-}
-.kitchen{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.kitchen img{
-   margin: 25px 0;
+    background-position: center center;
 }
 
 .footer {
     background-color: #FF8040;
-    margin-bottom: 0;
+    margin-bottom: -20px;
     margin-top: 20px;
 }
 

@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <link rel="stylesheet" href="css/cssReset.css">
-    <link rel="stylesheet" href="css/introduce.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cssReset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/index.css">
     <script src="js/jQuery 3.6.0.js"></script>
+    <style>
+        :root {
+            --bs-font-sans-serif: system-ui, -apple-system, 'Microsoft JhengHei', 微軟正黑體,
+                "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+                sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                "Noto Color Emoji";
+        }
+    </style>
     <title>開心漢堡店</title>
 </head>
 
@@ -23,7 +32,7 @@
                     <h1 class="logo">burger</h1>
                 </a>
                 <ul class="menu">
-                    <li><a href="#">首頁</a></li>
+                    <li><a href="index.html">首頁</a></li>
                     <li><a href="login.html">會員登入</a></li>
                     <li><a href="cooker.html">主廚</a></li>
                     <li><a href="introduce.html">餐廳介紹</a></li>
@@ -32,142 +41,160 @@
                 <a href="#" class="momenu">menu</a>
             </div>
         </header>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img
-                        src="https://images.pexels.com/photos/617230/pexels-photo-617230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="" width="100%" height="100%"></div>
-                <div class="swiper-slide"><img
-                        src="https://images.pexels.com/photos/1563045/pexels-photo-1563045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt=""></div>
+
+        <div class="p-4 p-lg-5 text-white rounded-2 bg-cover mb-4"
+            style="background-image: url(https://images.unsplash.com/photo-1561758033-d89a9ad46330?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470);">
+            <div class="col-lg-6">
+                <h1 class="display-4 fst-italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium odio quae
+                    aut recusandae obcaecati
+                    assumenda blanditiis odit consectetur rerum omnis laboriosam libero vel fugiat harum, quasi illo
+                    placeat
+                    dolore.</p>
+                <p class="lead mb-0"><a class="text-white" href="#">read more</a></p>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
         </div>
 
-        <ul class="course">
-            <li>
-                <div class="pic"><img
-                        src="https://www.recipetineats.com/wp-content/uploads/2019/08/Avocado-Chicken-Burgers_9.jpg"
-                        alt="burger"></div>
-                <h6>招牌漢堡</h6>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio facere tenetur veniam quo ratione
-                    fuga laborum quis aut exercitationem nemo delectus consequatur fugiat, officia facilis esse in a
-                    beatae sed!</p>
-            </li>
-            <li>
-                <div class="pic"><img
-                        src="https://s.yimg.com/ny/api/res/1.2/Lv3j5_IRSafi.bkEDnaGjg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/uu/api/res/1.2/3nIT7mDhtDhT2GLVnWB4hQ--~B/aD02ODM7dz0xMDI0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/ko/ftvn.com.tw/62a92f8d509b4d6a8bd52a4b3db828e1"
-                        alt="burger"></div>
-                <h6>香酥薯條</h6>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio facere tenetur veniam quo ratione
-                    fuga laborum quis aut exercitationem nemo delectus consequatur fugiat, officia facilis esse in a
-                    beatae sed!</p>
 
-            </li>
-            <li>
-                <div class="pic"><img
-                        src="data:image/jpeg;base64,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"
-                        alt="burger"></div>
-                <h6>酥嫩雞塊</h6>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio facere tenetur veniam quo ratione
-                    fuga laborum quis aut exercitationem nemo delectus consequatur fugiat, officia facilis esse in a
-                    beatae sed!</p>
-        </ul>
-        <div class="menuTwo">
-            <div class="menuTwo-left">
-                <h2>多樣選擇</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facilis molestias libero eum ipsa cum
-                    reiciendis magni temporibus officiis corrupti dolor error, accusamus quae. Explicabo molestiae fugit
-                    eaque fugiat non?</p>
+        <div class="row row-cols-1 row-cols-lg-2 mb-4">
+            <div class="col">
+                <div class="card row g-0 flex-row h-100">
+                    <div class="col">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <strong class="mb-2">特色漢堡</strong>
+                            <div class="mb-1 text-muted">虱目魚漢堡</div>
+                            <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                labore
+                                at aperiam id, nihil
+                                vel facilis eveniet iste illum voluptatum aliquid, quod sint ea inventore. Porro sed
+                                culpa
+                                nisi magni?</p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-4 bg-cover d-none d-lg-block"
+                        style="background-image: url(https://images.unsplash.com/photo-1530554764233-e79e16c91d08?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687);">
+                    </div>
+                </div>
             </div>
-            <div class="menuTwo-right">
-                <img src="https://images.pexels.com/photos/2280573/pexels-photo-2280573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="">
+            <div class="col">
+                <div class="card row g-0 flex-row h-100">
+                    <div class="col">
+                        <div class="p-4 d-flex flex-column h-100">
+                            <strong class="mb-2">新鮮食材</strong>
+                            <div class="mb-1 text-muted">當天直送</div>
+                            <p class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                                labore
+                                at aperiam id, nihil
+                                vel facilis eveniet iste illum voluptatum aliquid, quod sint ea inventore.
+                            </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-4 bg-cover d-none d-lg-block"
+                        style="background-image: url(https://images.unsplash.com/photo-1619527762865-7277bd36c3ef?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=728);">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="menuTwo">
-       
-            <div class="menuTwo-left order-2">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facilis molestias libero eum ipsa cum
-                    reiciendis magni temporibus officiis corrupti dolor error, accusamus quae. Explicabo molestiae fugit
-                    eaque fugiat non?</p>
+
+
+        <div class="row g-lg-5">
+            <div class="col-lg-8">
+                <article>
+                    <h2>餐廳介紹</h2>
+                    <p>2002五月--<a href="#">Since</a></p>
+                    <p><img class="img-fluid"
+                            src="https://media.istockphoto.com/photos/its-sweet-like-you-picture-id1295387357?k=20&m=1295387357&s=612x612&w=0&h=BRxI1x0IjbBagxR3t2YPQURc2Gq4PGeMiVY-PF7a3Vg="
+                            alt="圖片"></p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti expedita ipsam fugiat maiores
+                        ipsa cum qui rem dolore eum placeat! In, cupiditate excepturi mollitia nulla est iure placeat
+                        distinctio provident!
+                        Vero harum tenetur repellendus? Ea minima explicabo repellat quis natus laboriosam debitis
+                        accusamus sequi eligendi, esse ipsam error omnis dicta officiis et amet molestias modi beatae
+                        totam doloremque quae quasi?
+                        Quas ex quis asperiores, aliquam perferendis voluptatum hic impedit non aspernatur recusandae
+                        dicta consequatur, rerum veniam suscipit. Placeat culpa nostrum voluptatum accusamus, illo
+                        accusantium, at beatae ducimus quas neque corrupti!
+                        Sint, odio ratione consequatur eos fugit hic libero voluptates molestias quod nemo? Possimus eos
+                        vel natus assumenda vero fugiat dolorem, illum voluptates, eveniet a magni distinctio quis ex
+                        fugit blanditiis.
+                        Odit ad amet sit adipisci est quidem eveniet libero, exercitationem ea eos qui, ab obcaecati
+                        sunt eaque dolores magnam fuga deleniti molestias recusandae illum pariatur quia odio? Adipisci,
+                        in distinctio.
+                        Perferendis pariatur dolore, obcaecati magni aliquid corporis tenetur doloribus esse nam laborum
+                        quia illo harum voluptate. Quasi atque fugit laboriosam reiciendis qui eum eos aperiam eligendi
+                        a, quidem quas cumque.
+                    <p><img class="img-fluid"
+                            src="https://media.istockphoto.com/photos/beautiful-woman-holding-a-big-burger-picture-id1298943371?k=20&m=1298943371&s=612x612&w=0&h=6Cxfhfobo7X0Vc_-ZTrNxG4kcRqki1rpWlXRVkWg6JA="
+                            alt=""></p>
+                    Dolore, deserunt quia sint expedita iste amet unde accusantium libero culpa nobis distinctio
+                    ipsam atque autem corporis itaque facilis magnam. Iure quae saepe velit nisi quibusdam id itaque
+                    doloribus distinctio.
+                    Officiis et minima laboriosam illum aspernatur iure atque expedita tenetur adipisci perferendis
+                    culpa quam, dolor earum praesentium alias officia deserunt quia. Consectetur quaerat non
+                    possimus cumque ducimus doloremque ipsa unde.
+                    Recusandae minima pariatur quam reiciendis iste id maxime delectus totam nam, soluta facere
+                    porro a repellat ipsum consectetur amet. Illo repudiandae unde cumque incidunt minima enim
+                    perferendis quia, dolor quas?
+                    Non, excepturi officiis reiciendis repellendus ex velit totam maiores autem animi? Perferendis
+                    cupiditate aperiam consequatur repellendus eligendi molestiae veniam, labore inventore voluptate
+                    autem quis sint fugit vel facere odio necessitatibus?
+                    Nulla, rem itaque! Consequuntur quia aliquid deleniti, neque placeat ex voluptatibus quidem
+                    corporis quae necessitatibus sapiente temporibus consectetur fugit ad unde facere assumenda
+                    optio odit tempore amet in doloremque nihil.
+                    Ratione necessitatibus voluptatem hic consequuntur exercitationem fuga totam, eligendi a
+                    architecto repudiandae aut excepturi ipsam quod inventore corporis nam cum consectetur, vitae
+                    suscipit libero assumenda autem placeat repellendus. Corrupti, alias.
+                    Deserunt ratione, tempore, unde illo voluptatem iste, dignissimos officia facilis expedita ipsam
+                    neque! Exercitationem quasi recusandae officia, placeat, similique pariatur numquam est maxime
+                    dolores non, sint reiciendis quos temporibus impedit.
+                    Inventore possimus optio eos molestiae similique explicabo nemo aperiam nisi odit est nam magni
+                    a nostrum vel id consectetur totam sunt, aliquid vitae. Corporis est nulla consequatur eveniet
+                    incidunt distinctio!
+                    Omnis asperiores nam commodi distinctio assumenda dolor tempore officia, dolorem perspiciatis
+                    repellendus enim accusamus modi in dolore quisquam molestias blanditiis vitae! Enim a unde
+                    itaque vel eveniet dignissimos eaque laudantium.
+                    </p>
+                </article>
             </div>
-            <div class="menuTwo-right order-1">
-                <img src="https://images.pexels.com/photos/4253708/pexels-photo-4253708.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="">
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="sticky-top" style="top:32px">
+                    <div class="p-4 bg-light rounded">
+                        <h4>關於我們</h4>
+                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime cupiditate
+                            neque eligendi
+                            aliquid reprehenderit ab illo commodi quia nobis.</p>
+                    </div>
+                    <div class="p-4">
+                        <h4>我們的故事</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">2022年3月</a></li>
+                            <li><a href="#">2022年1月</a></li>
+                            <li><a href="#">2020年1月</a></li>
+                            <li><a href="#">2019年9月</a></li>
+                            <li><a href="#">2016年6月</a></li>
+                            <li><a href="#">2011年4月</a></li>
+                            <li><a href="#">2010年3月</a></li>
+                            <li><a href="#">2008年3月</a></li>
+                            <li><a href="#">2005年2月</a></li>
+                            <li><a href="#">2002年1月</a></li>
+                        </ol>
+                    </div>
+                    <div class="p-4">
+                        <h4>追蹤我們</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Line</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="menuTwo">
-            <div class="menuTwo-left">
-                <h2>產地直送</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facilis molestias libero eum ipsa cum
-                    reiciendis magni temporibus officiis corrupti dolor error, accusamus quae. Explicabo molestiae fugit
-                    eaque fugiat non?</p>
-            </div>
-            <div class="menuTwo-right">
-                <img src="https://images.pexels.com/photos/7728080/pexels-photo-7728080.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="">
-            </div>
-        </div>
-        <table class="compare">
-            <tr>
-                <th>項目</th>
-                <th>漢堡</th>
-                <th>薯條</th>
-                <th>雞塊</th>
-            </tr>
-            <tr>
-                <td>價格</td>
-                <td>150起</td>
-                <td>50起</td>
-                <td>80起</td>
-            </tr>
-            <tr>
-                <td>套餐搭配</td>
-                <td>有</td>
-                <td>無</td>
-                <td>無</td>
-            </tr>
-            <tr>
-                <td>醬料搭配</td>
-                <td>無</td>
-                <td>番茄醬</td>
-                <td>番茄醬、糖醋醬</td>
-            </tr>
-            <tr>
-                <td>熱量</td>
-                <td>約294.9 kcal</td>
-                <td>約311.9 kcal</td>
-                <td>約295.9 kcal</td>
-            </tr>
-            <tr>
-                <td>內容物</td>
-                <td>麵包、肉、蔬菜</td>
-                <td>馬鈴薯</td>
-                <td>雞肉</td>
-            </tr>
-            <tr>
-                <td>原物料產地</td>
-                <td>台灣</td>
-                <td>美國</td>
-                <td>台灣</td>
-            </tr>
-
-        </table>
-
     </div>
-
     <div class="footer">
         <ul>
             <li>
@@ -206,12 +233,7 @@
             </li>
         </ul>
     </div>
-    </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/introduce.js"></script>
-    <script>
-
-    </script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>
