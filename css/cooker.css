@@ -64,13 +64,6 @@
         right: 0;
         background: #0F222B;
     }
-    .logoAndMenu{
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        background-color: #fff;
-        margin-top: -10px;
-    }
 
     .menu li {
         width: 100%;
