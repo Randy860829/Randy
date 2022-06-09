@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>開心漢堡會員登入</title>
 </head>
@@ -62,7 +63,11 @@
         //註冊開始
         signUp.addEventListener('click', function (e) {
             if (email.value == '' || password.value == '') {
-                alert('格式輸入錯誤');
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Oops...',
+                    text: '信箱或密碼不得為空'
+                })
                 return;
             }
             let obj = {
@@ -74,7 +79,11 @@
             // console.log(obj);
 
             axios.post('https://hexschool-tutorial.herokuapp.com/api/signup', obj)
-                .then((response) => alert(response.data.message),
+                .then((response) => Swal.fire({
+                    icon: 'success',
+                    title: 'Oh ya !',
+                    text: '註冊成功'
+                }),
                     email.value = '',
                     password.value = ''
                 )
@@ -85,12 +94,12 @@
 
 
         //登入開始
-        login.addEventListener('click',function(e){
+        login.addEventListener('click', function (e) {
             let obj = {};
             obj.email = email.value;
             obj.password = password.value;
             axios.post('https://hexschool-tutorial.herokuapp.com/api/signin', obj)
-                .then((response) => alert(response.data.message),
+                .then((response) => Swal.fire(response.data.message),
                     email.value = '',
                     password.value = ''
                 )
